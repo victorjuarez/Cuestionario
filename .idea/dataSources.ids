@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - @localhost" uuid="d9438d97-05f1-40f8-bfb7-ef02ad4b4bff">
+    <database-info product="MySQL" version="5.5.40-0+wheezy1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="examen"/>
+    <table name="detalle_pregutas_respuestas" schema="" catalog="examen" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="ID_Pregunta" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ID_Respuesta" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <index name="unique_ID" unique="true" columns="ID"/>
+    </table>
+    <table name="preguntas" schema="" catalog="examen" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pregunta" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ID_respuesta" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="preguntas_ibfk_1" columns="ID" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_10" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_11" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_12" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_13" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_14" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_15" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_16" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_17" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_18" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_19" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_2" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_20" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_21" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_22" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_3" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_4" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_5" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_6" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_7" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_8" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="preguntas_ibfk_9" columns="ID_respuesta" ref-table="respuestas" ref-schema="" ref-catalog="examen" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="unique_ID" unique="true" columns="ID"/>
+    </table>
+    <table name="respuestas" schema="" catalog="examen" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="respuesta" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="preguntas_ibfk_1" table="preguntas" schema="" catalog="examen" columns="ID"/>
+      <exported-key name="preguntas_ibfk_10" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_11" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_12" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_13" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_14" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_15" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_16" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_17" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_18" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_19" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_2" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_20" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_21" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_22" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_3" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_4" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_5" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_6" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_7" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_8" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+      <exported-key name="preguntas_ibfk_9" table="preguntas" schema="" catalog="examen" columns="ID_respuesta"/>
+    </table>
+    <table name="usuarios" schema="" catalog="examen" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nomb" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="App" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Apm" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="usr" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="psw" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="status" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="calficacion" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <index name="unique_ID" unique="true" columns="ID"/>
+    </table>
+  </data-source>
+</component>

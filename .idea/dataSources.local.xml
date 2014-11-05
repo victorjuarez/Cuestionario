@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - @localhost" uuid="d9438d97-05f1-40f8-bfb7-ef02ad4b4bff">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>examen.*</schema-pattern>
+      <default-schemas>examen.* mysql.*</default-schemas>
+    </data-source>
+  </component>
+</project>
+
